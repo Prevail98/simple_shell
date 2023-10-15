@@ -2,6 +2,13 @@
 #include <stdio.h>
 #include <sys/wait.h>
 
+/**
+ * prompt - the function
+ * @av: a parameter
+ * @env: the enviroment variable
+ * Return: Returns failure if its -1 sucess if 0
+ */
+
 #define MAX_COMMAND 10
 
 void prompt(char **av, char **env)
@@ -32,7 +39,7 @@ void prompt(char **av, char **env)
 			if (str[i] == '\n')
 				str[i] = 0;
 			i++;
-		
+
 		}
 
 		j = 0;

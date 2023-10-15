@@ -8,6 +8,6 @@
 void prompt(char **av, char **env);
 int add (int num1,int num2);
 int main(int ac, char **av, char **env);
-
+ssize_t _getline(char **lineptr, size_t *n, FILE *stream);
 
 #endif
